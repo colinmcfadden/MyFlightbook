@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="badgeTitleAchieved" xml:space="preserve">
+    <value>Badge for this achievement</value>
+  </data>
+  <data name="badgeTitleBronze" xml:space="preserve">
+    <value>Bronze badge for this achievement - continue for silver!</value>
+  </data>
+  <data name="badgeTitleGold" xml:space="preserve">
+    <value>Gold badge for this achievement - is there a higher level?</value>
+  </data>
+  <data name="badgeTitlePlatinum" xml:space="preserve">
+    <value>Platinum badge for this achievement - Wow!!!</value>
+  </data>
+  <data name="badgeTitleSilver" xml:space="preserve">
+    <value>Silver badge for this achievement - continue for gold!</value>
+  </data>
+  <data name="EarnedDate" xml:space="preserve">
+    <value>Earned {0:d}</value>
+  </data>
+  <data name="errInProgress" xml:space="preserve">
+    <value>Your achievements are being computed; please try again in a few moments.</value>
+  </data>
+  <data name="errNoBadgesEarned" xml:space="preserve">
+    <value>You have not yet earned any badges for your achievements.  Check back after you have added some flights to your account!</value>
+  </data>
+  <data name="HeaderText" xml:space="preserve">
+    <value>Congratulations - here are badges for your achievements!</value>
+  </data>
+  <data name="nameFirstSolo" xml:space="preserve">
+    <value>First Solo!</value>
+  </data>
+  <data name="nameNumberFlights" xml:space="preserve">
+    <value>Logged {0:#,###} Flights!</value>
+  </data>
+  <data name="nameNumberModels" xml:space="preserve">
+    <value>Flown {0} different models of aircraft!</value>
+  </data>
+  <data name="nameRatingATP" xml:space="preserve">
+    <value>New Rating: ATP!</value>
+  </data>
+  <data name="nameRatingCFI" xml:space="preserve">
+    <value>New Rating: CFI!</value>
+  </data>
+  <data name="nameRatingCFII" xml:space="preserve">
+    <value>New Rating: CFII!</value>
+  </data>
+  <data name="nameRatingCommercial" xml:space="preserve">
+    <value>New Rating: Commercial Pilot!</value>
+  </data>
+  <data name="nameRatingInstrument" xml:space="preserve">
+    <value>New Rating: Instrument!</value>
+  </data>
+  <data name="nameRatingPPL" xml:space="preserve">
+    <value>New Rating: Private Pilot!</value>
+  </data>
+  <data name="nameRatingRecreation" xml:space="preserve">
+    <value>New Rating: Recrational Pilot!</value>
+  </data>
+  <data name="nameRatingSport" xml:space="preserve">
+    <value>New Rating: Sport Pilot!</value>
+  </data>
+  <data name="btnForceRefresh" xml:space="preserve">
+    <value>Not seeing the badges you think you should see?  Click here to refresh.</value>
+  </data>
+  <data name="categoryMilestones" xml:space="preserve">
+    <value>Milestones</value>
+  </data>
+  <data name="categoryRatings" xml:space="preserve">
+    <value>Ratings</value>
+  </data>
+  <data name="categoryTraining" xml:space="preserve">
+    <value>Primary Training</value>
+  </data>
+  <data name="nameFirstLesson" xml:space="preserve">
+    <value>Began Flight Training!</value>
+  </data>
+  <data name="nameFirstNightLanding" xml:space="preserve">
+    <value>First Night Landing!</value>
+  </data>
+  <data name="nameFirstXC" xml:space="preserve">
+    <value>First Cross-Country Flight!</value>
+  </data>
+  <data name="nameNumberAircraft" xml:space="preserve">
+    <value>Flown {0:#,###} distinct aircraft!</value>
+  </data>
+  <data name="nameNumberAirports" xml:space="preserve">
+    <value>Airport Tourist: {0:#,###} airports!</value>
+  </data>
+  <data name="nameNumberCFI" xml:space="preserve">
+    <value>{0:#,###} hours as CFI logged!</value>
+  </data>
+  <data name="nameNumberPIC" xml:space="preserve">
+    <value>{0:#,###} hours as PIC logged!</value>
+  </data>
+  <data name="nameNumberSIC" xml:space="preserve">
+    <value>{0:#,###} hours as SIC logged!</value>
+  </data>
+  <data name="nameNumberTotal" xml:space="preserve">
+    <value>{0:#,###} total hours logged!</value>
+  </data>
+  <data name="categoryVisitedAirports" xml:space="preserve">
+    <value>Visited Airports</value>
+  </data>
+  <data name="nameNumberIMC" xml:space="preserve">
+    <value>"Flying Blind" - {0:#,###} hours of actual IMC time!</value>
+  </data>
+  <data name="nameNumberNight" xml:space="preserve">
+    <value>"Night Owl" - {0:#,###} hours of night flight!</value>
+  </data>
+  <data name="nameRatingMEI" xml:space="preserve">
+    <value>New Rating: Multi-Engine Instructor!</value>
+  </data>
+  <data name="nameFirstSoloXCFlight" xml:space="preserve">
+    <value>First Solo Cross-Country Flight!</value>
+  </data>
+  <data name="LevelReachedDate" xml:space="preserve">
+    <value>Level achieved {0:d}</value>
+  </data>
+  <data name="nameNumberApproaches" xml:space="preserve">
+    <value>{0:#,###} instrument approaches performed!</value>
+  </data>
+  <data name="nameNumberLandings" xml:space="preserve">
+    <value>{0:#,###} landings recorded!</value>
+  </data>
+  <data name="categoryMiscellaneous" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="nameAntarctica" xml:space="preserve">
+    <value>You flew in Antarctica.  (Seriously?  Wow!)</value>
+  </data>
+  <data name="nameContinents" xml:space="preserve">
+    <value>Inter-continental Flier: flown on {0} continents!</value>
+  </data>
+  <data name="LicenseATP" xml:space="preserve">
+    <value>ATP</value>
+  </data>
+  <data name="LicenseCFI" xml:space="preserve">
+    <value>Flight Instructor</value>
+  </data>
+  <data name="LicenseCFII" xml:space="preserve">
+    <value>CFII</value>
+  </data>
+  <data name="LicenseCommercial" xml:space="preserve">
+    <value>Commercial</value>
+  </data>
+  <data name="LicenseInstrument" xml:space="preserve">
+    <value>Instrument</value>
+  </data>
+  <data name="LicenseMEI" xml:space="preserve">
+    <value>MEI </value>
+  </data>
+  <data name="LicensePPL" xml:space="preserve">
+    <value>Private Pilot</value>
+  </data>
+  <data name="LicenseRecreational" xml:space="preserve">
+    <value>Recreational PIlot</value>
+  </data>
+  <data name="LicenseSport" xml:space="preserve">
+    <value>Sport Pilot</value>
+  </data>
+  <data name="LicenseNewPrivilege" xml:space="preserve">
+    <value>Additional Privilege</value>
+  </data>
+  <data name="LicenseNewRating" xml:space="preserve">
+    <value>New Rating</value>
+  </data>
+  <data name="ratingTypeTemplate" xml:space="preserve">
+    <value> - Type: {0}</value>
+  </data>
+  <data name="nameFlyingStreak" xml:space="preserve">
+    <value>Flying Streak: flew {0} days in a row!</value>
+  </data>
+  <data name="PrivilegeCFII" xml:space="preserve">
+    <value>Instrument</value>
+  </data>
+  <data name="PrivilegeMultiEngine" xml:space="preserve">
+    <value>Multi-Engine</value>
+  </data>
+  <data name="PrivilegeSingleEngine" xml:space="preserve">
+    <value>Single-Engine</value>
+  </data>
+  <data name="RecentAchievementFlyingStreak" xml:space="preserve">
+    <value>{0} days from {1:d} to {2:d}</value>
+  </data>
+  <data name="RecentAchievementMostFlightsInDay" xml:space="preserve">
+    <value>{0} flights on {1:d}</value>
+  </data>
+  <data name="RecentAchievementsAirportsOnFlight" xml:space="preserve">
+    <value>{0} airports on {1:d}</value>
+  </data>
+  <data name="RecentAchievementsAirportsVisited" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="RecentAchievementsDistinctAircraft" xml:space="preserve">
+    <value>{0} </value>
+  </data>
+  <data name="RecentAchievementsDistinctModels" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="RecentAchievementsDistinctModelsAndFamilies" xml:space="preserve">
+    <value>{0} (comprising {1} families of models)</value>
+  </data>
+  <data name="RecentAchievementsFlyingDayCount" xml:space="preserve">
+    <value>{0} days out of {1:#,##0} ({2:#0.0}% of days in period)</value>
+  </data>
+  <data name="RecentAchievementsFurthestFlight" xml:space="preserve">
+    <value>{0:#,##0.0}nm on {1:d}</value>
+  </data>
+  <data name="RecentAchievementsLongestFlight" xml:space="preserve">
+    <value>{0} hours on {1:d}</value>
+  </data>
+  <data name="RecentAchievementFlyingStreakTitle" xml:space="preserve">
+    <value>Longest streak of consecutive flying days:</value>
+  </data>
+  <data name="RecentAchievementMostFlightsInDayTitle" xml:space="preserve">
+    <value>Most flights on a single day:</value>
+  </data>
+  <data name="RecentAchievementsAirportsOnFlightTitle" xml:space="preserve">
+    <value>Most airports in a single flight:</value>
+  </data>
+  <data name="RecentAchievementsAirportsVisitedTitle" xml:space="preserve">
+    <value>Distinct airports visited:</value>
+  </data>
+  <data name="RecentAchievementsDistinctAircraftTitle" xml:space="preserve">
+    <value>Distinct aircraft flown:</value>
+  </data>
+  <data name="RecentAchievementsDistinctModelsTitle" xml:space="preserve">
+    <value>Distinct models flown:</value>
+  </data>
+  <data name="RecentAchievementsFlyingDayCountTitle" xml:space="preserve">
+    <value>Total days flown:</value>
+  </data>
+  <data name="RecentAchievementsFurthestFlightTitle" xml:space="preserve">
+    <value>Furthest flight:</value>
+  </data>
+  <data name="RecentAchievementsLongestFlightTitle" xml:space="preserve">
+    <value>Longest flight:</value>
+  </data>
+  <data name="RecentAchievementsTitle" xml:space="preserve">
+    <value>Flying stats and achievements for {0:d} to {1:d}</value>
+  </data>
+  <data name="LicenseNight" xml:space="preserve">
+    <value>Night</value>
+  </data>
+  <data name="nameRatingNight" xml:space="preserve">
+    <value>New Rating: Night!</value>
+  </data>
+  <data name="PrivilegeNight" xml:space="preserve">
+    <value>Any aircraft for which you are rated</value>
+  </data>
+  <data name="RecentStatsTitle" xml:space="preserve">
+    <value>Flying stats for {0:d} to {1:d}</value>
+  </data>
+  <data name="RecentAchievementsCalendarHeader" xml:space="preserve">
+    <value># of flights per day</value>
+  </data>
+  <data name="RecentAchievementsViewCalendar" xml:space="preserve">
+    <value>View a calendar of your flying</value>
+  </data>
+  <data name="nameNumberCatClass" xml:space="preserve">
+    <value>Flown {0} distinct category/classes of aircraft!</value>
+  </data>
+  <data name="nameNumberNVHours" xml:space="preserve">
+    <value>{0:#,###} NV (Goggles or FLIR) hours logged!</value>
+  </data>
+</root>

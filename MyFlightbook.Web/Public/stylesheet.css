@@ -1,0 +1,1574 @@
+﻿/******************************************************
+ * 
+ * Copyright (c) 2007-2018 MyFlightbook LLC
+ * Contact myflightbook-at-gmail.com for more information
+ *
+*******************************************************/
+
+/* 
+    open_sans and roboto used from http://www.1001fonts.com/open-sans-font.html and http://www.1001fonts.com/roboto-font.html; 
+    Licensed under Appache License 2.0, free for commercial use
+
+*/
+@font-face {
+    font-family: open_sans;
+    font-weight: bold;
+    font-style: normal;
+    src: url('Fonts/open-sans.bold.ttf') format('opentype')
+}
+
+@font-face {
+    font-family: open_sans;
+    font-weight: normal;
+    font-style: normal;
+    src: url('Fonts/open-sans.regular.ttf') format('opentype')
+}
+
+@font-face {
+    font-family: roboto_bold;
+    font-weight: bold;
+    src: url('Fonts/roboto.bold.ttf') format('opentype')
+}
+
+
+/* Basic HTML */
+.mfbDefault {
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9pt;
+    /* max-width: 1400px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mfbDefault table {
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+BODY, body {
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+TABLE, table
+{
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9pt;
+}
+
+H1
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    background-color: #00bcd4;
+    padding: 4px;
+    text-align: center;
+    margin: 0px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+H2
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4983B7;
+}
+H3
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: Black;
+}
+H4
+{
+    font-size: 11px;
+    font-weight: normal;
+    color: Black;
+}
+
+/* Centered body */
+.centeredBody {
+    max-width: 1200px;
+    margin-left:auto; 
+    margin-right: auto;
+}
+
+/* Header */
+#headerBar
+{
+    display:block;
+    clear:both;
+    width: 100%;
+    text-align: center;
+}
+
+.noprint #headerBar {
+    border-top: 7px solid #00bcd4;
+}
+
+#headerLogo
+{
+    display:inline-block;
+    vertical-align:top;
+    padding: 3px;
+    float: left;
+}
+
+#headerMiddleContainer
+{
+    display: inline-block;
+    width: auto;
+    vertical-align: bottom;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerMobileCrossSell
+{
+    text-align: center; 
+    padding: 3px;
+    line-height: 40px;
+}
+
+#headerMenuContainer
+{
+}
+
+#headerSearchAndSign
+{
+    display: inline-block;
+    float:right;
+    width: auto;
+    vertical-align:top;
+    line-height: 16pt;
+}
+
+#headerSearchBox, #headerLoginStatus
+{
+}
+
+/* Data entry form */
+.header
+{
+    font-weight: bold;
+    border-bottom: black 1px solid;
+}
+.itemlabel
+{
+    font-size: 9pt;
+}
+
+.logbookForm
+{
+    background-color: white;
+}
+
+.hint
+{
+    vertical-align:super; 
+    font-size:7pt;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+.hintPopup {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    max-width: 50%;
+    display: none;
+    background-color: #e7e7e7;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+/* Vertical form (e.g., Edit Make) */
+.vfSection
+{
+    display:block;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 8px;
+}
+
+.vfPrompt
+{
+    font-weight:bold;
+    width: 130px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vfSubDesc {
+    font-weight:normal;
+    font-size:smaller;
+}
+
+.vfValue
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vfDescription
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: smaller;
+    text-align: left;
+    text-indent: 0;
+}
+
+/* Error/success messages messages */
+.success
+{
+    font-weight: bold;
+    color: Green;
+}
+.ok
+{
+    font-weight: normal;
+    color: Green;
+}
+
+.error
+{
+    font-weight: bold;
+    color: Red;
+}
+
+.emphasis
+{
+    font-weight:bold;
+}
+
+/* Currency status */
+.currencylabel
+{
+    font-weight: normal;
+    font-size: 12px;
+}
+.currencygap
+{
+    font-weight: normal;
+    font-size: 9px;
+}
+.currencyok
+{
+    font-weight: normal;
+    color: Green;
+    font-size: 11px;
+}
+.currencynearlydue
+{
+    font-weight: bold;
+    color: Blue;
+    font-size: 11px;
+}
+.currencyexpired
+{
+    font-weight: bold;
+    color: Red;
+    font-size: 11px;
+}
+
+.currencynodate 
+{
+    font-weight: bold;
+    color: black;
+    font-size: 11px;
+}
+
+/* Signature status */
+.signatureValid
+{
+    color: Green;
+}
+.signatureInvalid
+{
+    color:Red;
+}
+
+.signatureBlock {
+    border: 1px double #DDDDDD;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    background-color: #F8F8f8;
+    margin: 3px;
+    padding: 3px;
+    display: inline-block;
+    background-color: #F8F8F8;
+}
+
+.bordered .signatureBlock tr td {
+    background-color: #F8F8F8;
+    border: none;
+}
+
+.signatureBlockSig {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.fineprint
+{
+    font-weight: normal;
+    font-size: smaller;
+    text-indent: 0;
+    text-align: left;
+}
+.task
+{
+    background-color: #C0C0C0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Logbook rows */
+.subtotalRow
+{
+    font-weight: bold;
+}
+
+.subtotalRowPageBreak
+{
+    font-weight: bold;
+    page-break-after: always;
+}
+
+.runningTotalRow
+{
+    font-weight: bold;
+    page-break-after:always;
+}
+
+.pageBreakRow 
+{
+    page-break-after: always;
+}
+
+/* Autocomplete AJAX */
+.AutoExtender {
+    font-weight: normal;
+    border: solid 1px #006699;
+    line-height: 20px;
+    list-style-type: none;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 3px;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+.AutoExtenderList
+{
+    border-bottom: dotted 1px #006699;
+    cursor: pointer;
+    color: Maroon;
+    list-style-type: none;
+}
+
+.AutoExtenderHighlight
+{
+    color: White;
+    background-color: #006699;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.AutoExtenderList:nth-last-child(1) {
+    border-bottom: none;
+}
+
+
+/* Accordian AJAX */
+.accordianHeader{
+    font-weight: bold;
+    line-height: 24pt;
+    background-color: lightgray;
+    padding: 3px;
+    margin-top: 4px;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.accordianHeaderSelected {
+    font-weight: bold;
+    line-height: 24pt;
+    background-color : darkgray;
+    padding: 3px;
+    margin-top: 4px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.accordianContent {
+    padding: 3px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.accordionMenuHeader
+{
+    display:none;
+    margin: 0px;
+    padding : 0px;
+}
+
+.accordionMenuContainer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.accordionMenuHeaderSelected
+{
+    display:none;
+    margin: 0px;
+    padding : 0px;
+}
+
+.accordionMenuContent {
+    padding: 4px;
+    background-color: white;
+    position: static;
+    border: black 1px solid;
+    margin: 15px;
+    border-bottom-left-radius: 7px; 
+    border-bottom-right-radius: 7px; 
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px;
+}
+
+.accordionMenuControllerUnselected {
+    display:inline-block;
+    padding:3px;
+    width:80px;
+    margin: 2px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: snow;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.accordionMenuControllerSelected {
+    display:inline-block;
+    padding:3px;
+    width:80px;
+    margin: 2px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filterApplied {
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #EEEEEE;
+    border: 1px solid gray;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+/* aircraft and flight pictures popup */
+.rollAble
+{
+    color: #4983B7;
+}
+
+.rollAble:hover
+{
+    color: black;
+    font-weight: bold;
+}
+
+.modalBackground
+{
+    background-color: Gray;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.modalpopup {
+    background-color: white;
+    min-width: 300px;
+    padding: 15px;
+    border: 1px solid gray;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.searchHit
+{
+    background-color:Yellow;
+}
+
+/* Combo-box typeahead prompt */
+.typeAhead
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    font-weight: bold;
+    visibility: visible;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    background-color: #cccc66;
+    z-index: 8;
+    position: absolute;
+}
+
+/* "Please Read" callout or similar */
+.callout
+{
+    border: 1px solid darkgray;
+    background-color: #DDDDDD;
+    padding: 3px;
+    margin: 3px;
+    width: 600px;
+}
+
+.endorsement
+{
+    width: 600px;
+    background-color: #CCCCCC;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    page-break-inside:avoid;
+}
+
+/* Watermark */
+.watermark
+{
+    color: Gray;
+}
+
+/* Menu bar - see http://www.cssportal.com/css3-menu-generator/; customized from there */
+#menu-bar 
+{
+  margin: 0;
+  text-align:left;
+  padding: 0px 0px 0px 0px;
+  height: 34px;
+  position:relative;
+  float:left;
+  line-height: 100%;
+}
+
+#menu-bar li 
+{
+  margin-right:1px;
+  margin-left: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
+  float: left;
+  height: 34px;
+  position: relative;
+  list-style: none;
+  background: #fafafa;
+}
+
+#menu-bar a {
+  font-weight: normal;
+  font-family: roboto_bold;
+  font-style: normal;
+  font-size: 10pt;
+  color: #263238;
+  text-decoration: none;
+  display: block;
+  padding: 8px 8px 8px 8px;
+  margin: 0;
+}
+#menu-bar .current a, #menu-bar li:hover > a {
+  font-weight: normal;
+  background: #cdcdcd;
+  color: #263238;
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a 
+{
+  font-weight: normal;
+  background: none;
+  filter:none;
+  border: none;
+  color: black;
+}
+#menu-bar ul a:hover {
+  background: #e7e7e7 !important;
+  color: black !important;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+#menu-bar ul {
+  background: #f3f6f6;
+  display: none;
+  margin: 3px, 0, 0, 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  border: none;
+  font-weight:normal;
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+}
+
+#menu-bar li:hover > ul {
+  display: block;  z-index: 100;
+}
+
+#menu-bar ul li {
+  float: none;
+  background: none;
+  filter: none;
+  right:auto;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:10px 0px 10px 15px;
+  color:#424242 !important;
+  font-size:10pt;
+  font-style:normal;
+  font-family:roboto_bold;
+  font-weight: normal;
+}
+#menu-bar ul li:first-child > a {
+}
+#menu-bar ul li:last-child > a {
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+
+* html #menu-bar {
+  height: 1%;
+}
+
+/* Icons on menu bar */
+#menu-bar .topTab, #menu-bar .current a, #menu-bar a.topTab:hover, #menu-bar li:hover > a {
+    background-size: 12pt 12pt;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 4pt;
+    padding-left: 20pt;
+}
+
+#menu-bar #tabIDtabHome, #tabIDtabHome.featureDescriptorIcon {
+    padding-left: 8px;
+}
+
+#menu-bar #tabIDtabLogbook, #tabIDtabLogbook.featureAreaDescriptorIcon {
+    background-image: url('tabimages/LogbookTab.png');
+}
+
+#menu-bar #tabIDtabAircraft, #tabIDtabAircraft.featureAreaDescriptorIcon {
+    background-image: url('tabimages/AircraftTab.png');
+}
+
+#menu-bar #tabIDtabMaps, #tabIDtabMaps.featureAreaDescriptorIcon {
+    background-image: url('tabimages/AirportTab.png');
+}
+
+#menu-bar #tabIDtabTraining, #tabIDtabTraining.featureAreaDescriptorIcon {
+    background-image: url('tabimages/TrainingTab.png');
+}
+
+#menu-bar #tabIDtabProfile, #tabIDtabProfile.featureAreaDescriptorIcon {
+    background-image: url('tabimages/ProfileTab.png');
+}
+
+#menu-bar #tabIDtabAdmin, #tabIDtabAdmin.featureAreaDescriptorIcon {
+    background-image: url('tabimages/AdminTab.png');
+}
+
+/* Sidebar UI */
+.topForm
+{
+    background-color: white;
+    padding: 5px;
+}
+
+.sidebarContainer
+{
+    background-color:White;
+}
+
+.sidebarLeft
+{
+    width: 150px;
+    display:inline-block;
+    vertical-align:top;
+    margin: 0px;
+    height:100%;
+    background-color:white;
+}
+
+.sidebarRight
+{
+    background-color: white;
+    padding: 5px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    min-width: 280px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebarSelected {
+    line-height: 40px;
+    display: block;
+    margin: 3px;
+    padding: 3px;
+    background-color: #cdcdcd;
+    font-family: roboto_bold;
+    font-weight: normal;
+    font-size: 10pt;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    height: 40px;
+    text-align: center;
+}
+
+.sidebarUnSelected {
+    line-height: 40px;
+    display: block;
+    margin: 3px;
+    padding: 3px;
+    background-color: white;
+    font-family: roboto_bold;
+    font-weight: normal;
+    font-size: 10pt;
+    height: 40px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: center;
+}
+
+td.sidebarUnSelected a, td.sidebarUnSelected a:visited, td.sidebarUnSelected a:link, td.sidebarUnSelected a:active
+{
+    text-decoration: none;
+    color: #4983B7;
+}
+
+td.sidebarUnSelected:hover, td.sidebarUnSelected a:hover
+{
+    color: Black;
+    text-decoration: underline;
+}
+
+a, a:visited
+{
+    outline: none;
+    text-decoration: none;
+    color: #4983B7;
+}
+
+a:hover
+{
+    outline:none;
+    text-decoration: underline;
+    color: Black;
+}
+
+a img
+{
+    outline: none;
+    border: none;
+}
+
+/* Edit Flight */
+/* item on the left of a left-right layout */
+.itemtimeleft
+{
+    display: inline;
+    float: left;
+    clear: left;
+    vertical-align: bottom;
+    width: 150px;
+    padding: 3px;
+}
+
+/* item on the right of a left-right layout */
+.itemtimeright
+{
+    display: inline;
+    float: left;
+    clear: right;
+    vertical-align: bottom;
+    padding: 3px;
+}
+
+/* item with no particular left/right layout */
+.itemtime
+{
+    padding: 3px;
+}
+
+/* Basic info about the flight */
+.flightinfoblock
+{
+    float: left;
+    clear: left;
+    padding: 3px;
+}
+
+/* the various times for the flight */
+.timesblock
+{
+    float: left;
+    clear: right;
+    padding: 3px;
+}
+
+/* full-width blocks (i.e., no side-to-side */
+.fullblock
+{
+    padding: 3px;
+    display: block;
+    clear: both;
+}
+
+/* item labels in both left and right times */
+.itemtimeleft .itemlabel, .itemtimeright .itemlabel, .flightinfoblock .itemlabel
+{
+    padding: 0px, 0px, 0px, 0px;
+    display: block;
+    clear: both;
+}
+
+/* flight-info items */
+.flightinfoitem
+{
+    float: left;
+}
+
+/* PropertyEditing*/
+.propItemFlow
+{
+    display:inline-block;
+    vertical-align:middle;
+    width: 280px;
+    height: 37px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.propItemContainer
+{
+    width: 600px;
+    padding: 3px;
+    border-style: none;
+}
+
+.propItemContainerOverflow
+{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 600px;
+    height: 200px;
+    padding: 3px;
+}
+
+.EntryBlock
+{
+    padding: 4px;
+    background-color: white;
+    position: static;
+    border: black 1px solid;
+    margin: 15px;
+}
+
+/* Data that we want to call out */
+.ExceptionData
+{
+    font-weight:bold;
+    color: Blue;
+}
+
+/* 8710 Form */
+.PaddedCell
+{
+    padding:3px;
+}
+
+.FootNote
+{
+    vertical-align:super; 
+    font-size:8pt;
+}
+
+/* Logbook gridview header */
+.headerBase {
+    font-weight: normal;
+    color: #444444;
+}
+
+.headerBase a {
+    color: #444444;
+}
+
+.headerBase a:hover {
+    color:#4983B7;
+    text-decoration:none;
+}
+
+.headerSortAsc {
+    font-weight: bold;
+}
+
+.headerSortAsc::after {
+    content: '▲';
+}
+
+.headerSortDesc {
+    font-weight: bold;
+}
+
+.headerSortDesc::after {
+    content: '▼';
+}
+
+/* Wizard steps */
+.wizStepCompleted
+{
+    font-weight:normal;
+    color:Gray;
+    font-size: 14px;
+}
+
+.wizStepInProgress
+{
+    font-weight:bold;
+    color:#4983B7;
+    font-size: 14px;
+}
+
+.wizStepFuture
+{
+    font-weight:normal;
+    color:Black;
+    font-size: 14px;
+}
+
+/* Footer */
+.footerContainer {
+    text-align: center;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 100%;
+    border-top: 12px solid #07afb9;
+    background-color: #263238;
+    color: white;
+    font-weight: normal;
+    font-family: roboto_bold;
+    font-size: 9pt;
+    border-top: 10px solid #07a5b9;
+}
+
+.footerItem
+{
+    display:inline-block;
+    text-align: left;
+    vertical-align:top;
+}
+
+.footerItem li {
+    list-style-type:none;
+    display:block;
+}
+
+.footerContainer hr {
+    display: none;
+}
+
+.footerContainer a, footerContainer a:visited, footerContainer a:hover {
+    color: white;
+}
+
+/* Data entry form tables */
+td.header, tr.header
+{
+    font-weight: bold;
+    text-align: left;
+}
+
+td.label
+{
+    vertical-align: middle;
+}
+
+/* Data Description tables */
+table.dataDescription
+{
+    border-collapse: collapse;
+}
+
+table.dataDescription tbody tr td
+{
+    border: 1px solid black;
+}
+
+table.dataDescription thead tr td
+{
+    background: #CCCCCC;
+    font-weight:bold;
+    border: 1px solid black;
+}
+
+/* Public flight row */
+.publicFlight
+{
+    border-top: 1px solid #CCCCCC;
+}
+
+/* Filter items for a flight query */
+.queryFilterItem {
+    display:inline-block; 
+    border-radius: 4px; 
+    font-size: 10pt; 
+    padding: 3px; 
+    vertical-align:middle; 
+    margin:2px; 
+    border: 1px solid gray; 
+    background: #DDDDDD;
+}
+
+/* Progress towards ratings */
+.progress {
+    width: 500px; 
+    border: 1px solid black; 
+    position: relative; 
+    height: 20px;
+    padding: 3px;
+}
+
+.checkedBox
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.percent {
+    text-align:center; 
+    width:100%; 
+    position: absolute; 
+    font-weight:bold; 
+    vertical-align:bottom; 
+    padding: 3px;
+    left:0; 
+    top:0;
+    height:20px;
+    line-height: 20px;
+    display:inline-block;
+}
+
+.progressRow 
+{
+    vertical-align: top;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bar 
+{
+    margin: 0px 0px 0px 0px;
+    left:0px;
+    top:0px;
+    height: 20px;
+}
+
+/* Image List item */
+.ilItem {
+    display: inline-block; 
+    padding: 5px; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.ilToolbar {
+    text-align: center; 
+    vertical-align:middle
+}
+
+.ilToolbarItem {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/* Preferences */
+.prefSectionRow
+{
+    margin-bottom: 10px;
+}
+
+/* Ajax */
+.ajax__html_editor_extender_texteditor
+{
+    background-color:White;
+}
+
+/* Calendaring */
+.calContainer
+{
+    vertical-align:top;
+}
+
+.calPlaceholder
+{
+    float:left; width:200px; padding: 4px; margin-left: auto; margin-right: auto;
+}
+
+.calNavContainer
+{
+    float:left; width:160px; padding:4px;margin-left: auto; margin-right: auto;
+}
+
+.calCalContainer
+{
+    float:left; width:600px; padding: 4px;
+}
+
+/* Club */
+.clubDetailsLeft
+{
+    vertical-align:top;
+    padding: 2px;
+    width: 100%;
+}
+
+.clubDetailsRight
+{
+    vertical-align:top;
+    float: right;
+    line-break:auto;
+    padding: 4px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    width: 50%;
+    max-width: 240px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 6px 6px 5px #888888;
+}
+
+/* Drag & drop */
+.draggableItem{
+    padding-left: 4px; 
+    padding-right: 4px;
+    height:16px; 
+    line-height: 16px;
+    margin: 4px;
+    white-space:nowrap;
+    background-color: #DDDDDD;
+    vertical-align: middle;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    cursor: move;
+}
+
+.dragTarget {
+    overflow-y:scroll;
+    height: 104px;
+    border: 1px solid black;
+}
+
+/* Resize handle*/
+.resizeHandle {
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/resizehandle.png);
+    cursor: se-resize;
+    z-index:100;
+}
+
+/* Active/Inactive aircraft or other items. */
+.activeRow {
+    opacity: 1.0;
+}
+
+.inactiveRow {
+    opacity: 0.5;
+}
+
+/* Flight details view */
+.detailsSection {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Home page welcome */
+.welcomeHeader {
+    margin-left:auto;
+    margin-right: auto;
+    min-width: 200px;
+    max-width: 350px;
+}
+
+#homePagePromo.welcomeHeader {
+    background-color: #00bcd4;
+    padding: 4px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+
+.welcomeHeader p {
+    font-size:larger;
+    font-weight: bold;
+    text-align:center;
+}
+
+#homePagePromo.welcomeHeader p {
+    text-align: center;
+    font-size: 24pt;
+    line-height: 1.0;
+    font-weight: bold;
+}
+
+#homePagePromo.welcomeHeader ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#homePagePromo.welcomeHeader li {
+    display: inline;
+    font-size: 12pt;
+    text-align: left;
+}
+
+#homePagePromo.welcomeHeader li:before {
+    content: "•";
+    margin-left: 6px;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+
+.featureAreaDescriptionHeader {
+    font-weight:bold;
+    font-size: 12pt;
+    text-align:center;
+}
+
+.featureAreaDescriptionBody {
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 9pt;
+}
+
+.featureAreaDescriptorIcon {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 24pt 24pt;
+    line-height: 24pt;
+    display: block;
+}
+
+.noselect:focus {
+    outline: none !important;
+}
+
+/* Ajax styling */
+/* Ajax file upload */
+.mfbDefault .ajax__fileupload {
+    border: none;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.mfbDefault .ajax__fileupload_dropzone {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 22pt;
+    font-weight: bold;
+    color: darkgrey;
+    line-height: 60px;
+}
+
+.mfbDefault .ajax__fileupload_selectFileButton {
+    background-color: #DDDDDD;
+    border: 1px solid #888888;
+    color: black;
+    font-size: 9pt;
+    line-height: 18pt;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.mfbDefault .ajax__fileupload_queueContainer {
+}
+
+.mfbDefault .ajax__fileupload_footer {
+}
+
+/* Pop-up hover menus */
+.hoverPopMenu {
+    background-color: #CCCCCC;
+    border-radius: 3px;
+}
+
+/* Tabs*/
+.mfbDefault.ajax__tab_xp .ajax__tab_header {
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9pt;
+}
+
+.mfbDefault .ajax__tab_panel, .mfbDefault .ajax__tab_body, .mfbDefault .ajax__scroll_none {
+    font-family: open_sans, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9pt;
+}
+
+/* Signature radio button items */
+.signFlightFlightToSign {
+    display: inline-block;
+    margin: 5px;
+    vertical-align:top;
+}
+
+.signFlightFlightToSign > table {
+    background-color: #DDDDDD;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    border: 1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 3px;
+}
+
+.signFlightFlightToSign td {
+    padding: 3px;
+}
+
+.signFlightSignatureBlock {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    vertical-align: top;
+}
+
+.signFlightInstructorChoice {
+    line-height: 24pt;
+    font-weight:bold;
+}
+
+.bigNumberSection {
+    display: inline-block;
+    height: 20pt;
+    width: 20pt;
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16pt;
+    border: 1px solid #00bcd4;
+    vertical-align:middle;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+h3.numberedStep {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Gridview styles */
+.gvhDefault {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.gvhCentered, .gvcCentered {
+    text-align:center;
+}
+
+.gvhLeft, .gvcLeft {
+    text-align: left;
+}
+
+.gvhRight, .gvcRight {
+    text-align: right;
+}
+
+.gvhBold {
+    font-weight: bold;
+}
+
+.gvAcImage {
+    text-align: center;
+    width: 160px;
+    vertical-align: middle;
+}
+
+.gvAcItem {
+    vertical-align:top;
+}
+
+.gvAcInactive {
+    vertical-align:top;
+    width: 20px;
+}
+
+.gvContext {
+    vertical-align:top;
+    width: 20px;
+}
+
+.gvDelete {
+    vertical-align:top;
+    width: 13px;
+}
+
+.largeBold {
+    font-weight:bold;
+    font-size:larger;
+}
+
+.imgMiddle {
+    vertical-align:middle;
+}
+
+/* Printing */
+@media print {
+    h1 {
+        background-color: none;
+    }
+
+    BODY, body {
+        border: none;
+    }
+
+   thead {display: table-header-group;}
+   tfoot {display: table-footer-group;}
+   .noprint, .sidebarContainer, .footerContainer {display:none; border:none;}
+   .logbookRow {vertical-align:top; border:1px solid lightgray; page-break-inside:avoid;}
+   .logbookAlternateRow {vertical-align:top; background:#EEEEEE; border:1px solid lightgray;page-break-inside:avoid;}
+   tr.logbookRow td, tr.logbookAlternateRow td {border: 1px solid lightgray; }
+   .hintPopup {
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    }
+   .endorsement {background-color: #EEEEEE;}
+}
+
+@media screen {
+    .printonly {display:none;}
+    .logbookRow, .logbookAlternateRow {
+        vertical-align: top;
+        border-bottom: 1px solid #cccccc;
+    }
+    .logbookAlternateRow {
+        background-color: #eeeeee;
+    }
+    .logbookRow:nth-last-child(2), .logbookAlternateRow:nth-last-child(2) {
+        border-bottom: none;
+    }
+
+    body, body {
+        max-width: 1400px;
+    }
+}
+
+thead {display: table-header-group;}
+tfoot {display: table-footer-group;}

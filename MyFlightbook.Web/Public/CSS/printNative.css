@@ -1,0 +1,78 @@
+﻿.pageTable {
+    width:100%; 
+    border-collapse:collapse; 
+    border-spacing:0; 
+    font-size:9pt;
+}
+.pageTable td {
+    padding: 5px;
+}
+
+tr.bordered {
+    page-break-inside:avoid;
+}
+
+tr.bordered td {
+    padding: 3px;
+    border:1px solid black;
+    page-break-inside:avoid;
+    font-size: smaller;
+}
+
+tr.subtotal td {
+    padding: 2px;
+    border: 1px solid gray;
+    page-break-inside:avoid;
+    font-weight:bold;
+}
+
+tr.subtotal td.subtotalLabel {
+    text-align:right;
+    width: 150px;
+}
+
+tr.subtotal td.noborder {
+    border:none;
+}
+
+thead.header th {
+    height: 40px;
+    white-space: nowrap;
+}
+
+thead.header th > div {
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+    width: .6cm;
+    text-overflow:ellipsis;
+    font-size: smaller;
+}
+
+thead.header th > div.custColumn {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    width: 1.0cm;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: smaller;
+    white-space:normal;
+}
+
+.header {
+    font-weight:bold;
+    text-align:left;
+}
+
+.numericColumn {
+    width: .6cm;
+}
+
+@media screen {
+    tr.bordered td { background-color:#ffffcc; }
+}
