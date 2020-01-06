@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlightbook.Web", "MyFlightbook.Web\MyFlightbook.Web.csproj", "{E240EA8E-1D58-46DD-B21B-C6C06AAA109F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlightbook.Core", "MyFlightbook.Core\MyFlightbook.Core.csproj", "{B346B816-7773-459A-A018-F37295066D7F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
